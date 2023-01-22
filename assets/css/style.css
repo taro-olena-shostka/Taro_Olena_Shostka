@@ -146,6 +146,7 @@ h6 {
     color:#eb4cd6;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1px;
+    font-size: 33px;
   }
   #header .social-links {
     margin-top: 15px;
@@ -406,11 +407,17 @@ section .container {
 
 .section-title h2::after {
   content: "";
-  width: 237px;
+  width: 240px;
+  
   height: 1px;
   display: inline-block;
   background: #eb4cd6;
-  margin: 4px 10px;
+  margin:  5px 0px;
+}
+@media (max-width: 400px) {
+  .section-title h2::after {
+    margin: 10px 0px;
+  }
 }
 
 .section-title p {
@@ -1039,7 +1046,7 @@ section .container {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(248, 244, 244, 0.829);
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
@@ -1073,6 +1080,7 @@ section .container {
 .contact .php-email-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
+  border: solid #eee;
 }
 
 .contact .php-email-form .error-message {
